@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">My Blog</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Welcome to My Blog</h1>
+                <p>Sharing thoughts, ideas, and experiences</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>This is where you can write about yourself or your business.</p>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Miami Lifestyle & Beauty</h2>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5a2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="South Beach Miami">
+                        </div>
+                        <div class="post-content">
+                            <div class="sponsored-badge">Sponsored</div>
+                            <h3>Miami Beach Beauty Essentials</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> March 25, 2024</span>
+                                <span><i class="far fa-user"></i> By Jonathan</span>
+                            </div>
+                            <p>My must-have products for surviving Miami's hot and humid weather while keeping your skin glowing...</p>
+                            <div class="promo-code">
+                                <strong>Use code: MIAMI30</strong> for 30% off beach essentials
+                            </div>
+                            <a href="#" class="read-more">Read Full Review</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5a2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Miami Beach Sunset">
+                        </div>
+                        <div class="post-content">
+                            <div class="sponsored-badge">Sponsored</div>
+                            <h3>Miami Nightlife Skincare Routine</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> March 22, 2024</span>
+                                <span><i class="far fa-user"></i> By Jonathan</span>
+                            </div>
+                            <p>How to keep your skin looking fresh after a night out in Miami. My go-to products for that perfect glow...</p>
+                            <div class="promo-code">
+                                <strong>Use code: NIGHT25</strong> for 25% off night routine products
+                            </div>
+                            <a href="#" class="read-more">Read Full Review</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5a2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Miami Beach Pool">
+                        </div>
+                        <div class="post-content">
+                            <div class="sponsored-badge">Sponsored</div>
+                            <h3>Poolside Beauty: Miami Edition</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> March 21, 2024</span>
+                                <span><i class="far fa-user"></i> By Jonathan</span>
+                            </div>
+                            <p>Essential products for maintaining your beauty routine by the pool. Perfect for Miami's sunny days...</p>
+                            <div class="promo-code">
+                                <strong>Use code: POOLSIDE20</strong> for 20% off pool essentials
+                            </div>
+                            <a href="#" class="read-more">Read Full Review</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/kendyhazan@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
